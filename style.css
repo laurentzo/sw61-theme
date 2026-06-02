@@ -1,0 +1,105 @@
+/*
+Theme Name:  SW61 1.0
+Theme URI:   https://2026.studioweb61.fr
+Description: Thème enfant de Twenty Twenty-Five — Studio Web 61
+Author:      Studio Web 61
+Author URI:  https://studioweb61.fr
+Template:    twentytwentyfive
+Version:     1.4.0-light
+License:     GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: sw61
+*/
+
+/* ─── Layout global ──────────────────────────────
+   On retire le padding de .wp-site-blocks pour que
+   header et footer soient pleine largeur.
+   Le padding est remis sur le <main> uniquement.
+─────────────────────────────────────────────── */
+.wp-site-blocks {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.wp-site-blocks > main {
+  padding-left:  var(--wp--preset--spacing--container-x-mobile);
+  padding-right: var(--wp--preset--spacing--container-x-mobile);
+  margin-top: 0;
+}
+
+@media (min-width: 768px) {
+  .wp-site-blocks > main {
+    padding-left:  var(--wp--preset--spacing--container-x-desk);
+    padding-right: var(--wp--preset--spacing--container-x-desk);
+  }
+  .wp-block-group {
+    padding-top:    var(--wp--preset--spacing--container-y-desk);
+    padding-bottom: var(--wp--preset--spacing--container-y-desk);
+  }
+}
+
+/* ─── Boutons ────────────────────────────────── */
+.wp-element-button,
+.wp-block-button__link {
+  min-height: var(--wp--custom--sizing--btn-min-h);
+  display: inline-flex;
+  align-items: center;
+}
+
+/* ─── Header ─────────────────────────────────── */
+.sw61-header {
+  position: relative;
+  z-index: 100;
+}
+
+.sw61-header .wp-block-navigation .wp-block-navigation-item__content,
+.sw61-header .wp-block-navigation__responsive-container-open,
+.sw61-header .wp-block-navigation__responsive-container-open svg {
+  color: var(--wp--preset--color--claire);
+  stroke: var(--wp--preset--color--claire);
+  font-size: var(--wp--preset--font-size--small);
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  transition: color 0.2s ease;
+}
+
+.sw61-header .wp-block-navigation a:hover {
+  color: var(--wp--preset--color--vert-menthe);
+}
+
+.sw61-header .wp-block-navigation__responsive-container-close {
+  color: var(--wp--preset--color--claire);
+}
+
+.sw61-header .wp-block-navigation__responsive-container.is-menu-open {
+  background-color: var(--wp--preset--color--sombre);
+  padding: var(--wp--preset--spacing--container-y-desk) var(--wp--preset--spacing--container-x-mobile);
+}
+
+.sw61-header .wp-block-navigation__responsive-container.is-menu-open a {
+  color: var(--wp--preset--color--claire);
+  font-size: var(--wp--preset--font-size--h4);
+}
+
+/* ─── Réseaux sociaux ────────────────────────── */
+.sw61-rs {
+  gap: var(--wp--preset--spacing--btn-mobile);
+}
+
+.sw61-rs-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--wp--preset--color--claire);
+  transition: color 0.2s ease;
+}
+
+.sw61-rs-link:hover {
+  color: var(--wp--preset--color--vert-menthe);
+}
+
+.sw61-rs-link svg {
+  width:  var(--wp--custom--sizing--rs-md);
+  height: var(--wp--custom--sizing--rs-md);
+}

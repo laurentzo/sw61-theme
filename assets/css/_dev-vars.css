@@ -1,0 +1,71 @@
+/* ================================================
+   ⚠️ DEV ONLY — À SUPPRIMER AVANT MISE EN PROD
+   Variables de référence pour autocomplétion VSCode
+   Générées par WP depuis theme.json — NE PAS MODIFIER
+   ================================================ */
+
+/* ================================================
+   ⚠️ DEV ONLY — À SUPPRIMER AVANT MISE EN PROD
+   Variables de référence pour autocomplétion VSCode
+   Générées par WP depuis theme.json — NE PAS MODIFIER
+   ================================================ */
+:root {
+  /* Couleurs */
+  --wp--preset--color--sombre:      #042D3A;
+  --wp--preset--color--vert-fonce:  #5D967E;
+  --wp--preset--color--vert-menthe: #80D0AE;
+  --wp--preset--color--vert-clair:  #A0F9CE;
+  --wp--preset--color--corail:      #FF6F61;
+  --wp--preset--color--claire:      #F9F9F7;
+  --wp--preset--color--blanc:       #FFFFFF;
+  --wp--preset--color--noir:        #000000;
+
+  /* Typographie — famille */
+  --wp--preset--font-family--dm-sans: "DM Sans", sans-serif;
+
+  /* Typographie — tailles SW61 (fluid) */
+  --wp--preset--font-size--small: clamp(14px, 1.5vw, 15px);
+  --wp--preset--font-size--body:  18px;
+  --wp--preset--font-size--btn:   clamp(17px, 2vw, 20px);
+  --wp--preset--font-size--h5:    clamp(15px, 2vw, 20px);
+  --wp--preset--font-size--h4:    clamp(20px, 2.5vw, 24px);
+  --wp--preset--font-size--h3:    clamp(24px, 3vw, 30px);
+  --wp--preset--font-size--h2:    clamp(27px, 3.5vw, 34px);
+  --wp--preset--font-size--h1:    clamp(30px, 4vw, 38px);
+
+  /* Espacements SW61 */
+  --wp--preset--spacing--container-x-mobile: 30px;
+  --wp--preset--spacing--container-x-desk:   60px;
+  --wp--preset--spacing--container-y-mobile: 15px;
+  --wp--preset--spacing--container-y-desk:   40px;
+  --wp--preset--spacing--text-mb:            20px;
+  --wp--preset--spacing--btn-mobile:         12px;
+  --wp--preset--spacing--btn-desk:           15px;
+
+  /* Ombre */
+  --wp--preset--shadow--legere: 1px 2px 3px 0px rgba(0,0,0,0.15);
+
+  /* Custom — radius */
+  --wp--custom--radius--light:    5px;
+  --wp--custom--radius--standard: 18px;
+
+  /* Custom — sizing */
+  --wp--custom--sizing--btn-min-h: 44px;
+  --wp--custom--sizing--rs-sm:     24px;
+  --wp--custom--sizing--rs-md:     32px;
+  --wp--custom--sizing--rs-lg:     48px;
+  --wp--custom--sizing--puce-sm:   14px;
+  --wp--custom--sizing--puce-md:   20px;
+
+  /* Custom — typographie */
+  --wp--custom--tracking--titre: -0.5px;
+
+  /* Custom — divers */
+  --wp--custom--opacity--image:   0.6;
+  --wp--custom--border--standard: 2px;
+  --wp--custom--border--fin:      1px;
+}
+/* ================================================
+   SW61 — Variables de référence (auto-complétion)
+   Générées par WP depuis theme.json — NE PAS MODIFIER
+   ================================================ */

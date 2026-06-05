@@ -17,6 +17,9 @@ GitHub Theme URI: https://github.com/laurentzo/sw61-theme
    header et footer soient pleine largeur.
    Le padding est remis sur le <main> uniquement.
 ─────────────────────────────────────────────── */
+
+
+
 .wp-site-blocks {
   padding-left: 0;
   padding-right: 0;
@@ -34,8 +37,7 @@ GitHub Theme URI: https://github.com/laurentzo/sw61-theme
     padding-right: var(--wp--preset--spacing--container-x-desk);
   }
   .wp-block-group {
-    padding-top:    var(--wp--preset--spacing--container-y-desk);
-    padding-bottom: var(--wp--preset--spacing--container-y-desk);
+    padding: 22px var(--wp--preset--spacing--container-y-desk);
   }
 }
 
@@ -103,4 +105,120 @@ GitHub Theme URI: https://github.com/laurentzo/sw61-theme
 .sw61-rs-link svg {
   width:  var(--wp--custom--sizing--rs-md);
   height: var(--wp--custom--sizing--rs-md);
+}
+
+/* ─── Personnalisation header & footer ────────────────────────── */
+
+.wp-block-template-part {
+  padding: 0 var(--wp--preset--spacing--container-x-mobile);
+}
+
+.wp-block-navigation__responsive-container-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: var(--wp--preset--color--claire);
+}
+
+/*
+ * SW61 — Block Styles
+ * À intégrer dans style.css du thème enfant
+ * Dépend des variables --wp--preset--color--* et --wp--custom--*
+ */
+
+
+/* ═══════════════════════════════════════
+   BOUTONS
+═══════════════════════════════════════ */
+
+/* Outline — bordure primary, fond transparent */
+.wp-block-button.is-style-outline .wp-block-button__link {
+    background: transparent;
+    color:      var(--wp--preset--color--primary);
+    border:     var(--wp--custom--trait--standard) solid var(--wp--preset--color--primary);
+    box-shadow: none;
+}
+.wp-block-button.is-style-outline .wp-block-button__link:hover {
+    background: var(--wp--preset--color--primary);
+    color:      var(--wp--preset--color--base);
+}
+
+/* Ghost — bordure base, fond transparent (sur fond sombre) */
+.wp-block-button.is-style-ghost .wp-block-button__link {
+    background: transparent;
+    color:      var(--wp--preset--color--base);
+    border:     var(--wp--custom--trait--standard) solid var(--wp--preset--color--base);
+    box-shadow: none;
+}
+.wp-block-button.is-style-ghost .wp-block-button__link:hover {
+    background: var(--wp--preset--color--base);
+    color:      var(--wp--preset--color--contrast);
+}
+
+/* Corail — fond accent-1, texte base */
+.wp-block-button.is-style-corail .wp-block-button__link {
+    background: var(--wp--preset--color--accent-1);
+    color:      var(--wp--preset--color--base);
+    border:     none;
+}
+.wp-block-button.is-style-corail .wp-block-button__link:hover {
+    background: var(--wp--preset--color--primary);
+}
+
+/* Inversé — fond base, texte contrast */
+.wp-block-button.is-style-inverse .wp-block-button__link {
+    background: var(--wp--preset--color--base);
+    color:      var(--wp--preset--color--contrast);
+    border:     none;
+}
+.wp-block-button.is-style-inverse .wp-block-button__link:hover {
+    background: var(--wp--preset--color--secondary);
+    color:      var(--wp--preset--color--contrast);
+}
+
+
+/* ═══════════════════════════════════════
+   GROUPES / SECTIONS
+═══════════════════════════════════════ */
+
+/* Claire — fond base, texte contrast */
+.wp-block-group.is-style-claire {
+    background-color: var(--wp--preset--color--base);
+    color:            var(--wp--preset--color--contrast);
+}
+
+/* Sombre — fond contrast, texte base */
+.wp-block-group.is-style-sombre {
+    background-color: var(--wp--preset--color--contrast);
+    color:            var(--wp--preset--color--base);
+}
+.wp-block-group.is-style-sombre :is(h1, h2, h3, h4, h5, h6) {
+    color: var(--wp--preset--color--base);
+}
+.wp-block-group.is-style-sombre a {
+    color: var(--wp--preset--color--secondary);
+}
+
+/* Vert — fond primary, texte base */
+.wp-block-group.is-style-vert {
+    background-color: var(--wp--preset--color--primary);
+    color:            var(--wp--preset--color--base);
+}
+.wp-block-group.is-style-vert :is(h1, h2, h3, h4, h5, h6) {
+    color: var(--wp--preset--color--base);
+}
+
+/* Corail — fond accent-1, texte base */
+.wp-block-group.is-style-corail {
+    background-color: var(--wp--preset--color--accent-1);
+    color:            var(--wp--preset--color--base);
+}
+.wp-block-group.is-style-corail :is(h1, h2, h3, h4, h5, h6) {
+    color: var(--wp--preset--color--base);
+}
+
+
+.rc-mockup-img.wp-post-image {
+  width: 100%;
+  height: auto;
 }
